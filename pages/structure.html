@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura semántica</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <header >
+        <h1 class="titulo"> Estructura Semantica </h1>
+        <nav>
+        <a href="" class="texto-destacado"> Inicio </a>
+            <a href=""> Contenido</a>
+            <a href="" class="texto-destacado"> Acerca de..</a>
+            <a href=""> Contactanos</a>
+        </nav>
+    </header>
+    <main>
+        <div class="tarjeta-proyecto">
+<h3>Aplicación Interactiva</h3>
+<p>Un proyecto desarrollado con HTML, CSS y JS.</p>
+</div>
+        <h2 class="texto destacado">Sección Principal</h2>
+        <section>
+            <article>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga alias velit quos architecto porro veritatis rem rerum
+					omnis aut sit quasi minus, impedit excepturi necessitatibus. Obcaecati, accusamus error quia fuga unde minima hic
+					totam, ullam animi veniam earum doloribus, veritatis quas nihil nemo ratione nesciunt dignissimos tempore ab commodi
+					provident! Tempora facilis officia harum numquam dolorum modi fuga unde aliquam recusandae, asperiores similique
+					eaque debitis tenetur. Quod cum ipsam neque sequi culpa laudantium facere nobis facilis est velit unde, ex molestiae
+					at, odit necessitatibus magnam obcaecati dicta id provident voluptas corrupti natus deserunt. Cupiditate ea minima
+					ipsa asperiores officia necessitatibus.</p>
+<p id="destacado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sint ut in eius ab alias fugit
+	quod commodi enim repudiandae, fuga incidunt dolore consectetur architecto culpa cumque impedit nihil quos mollitia
+	rerum ipsum voluptates aspernatur labore! Pariatur minima magni dignissimos optio ex quos corporis rerum cumque
+	dolore unde velit officia a explicabo dolorem sunt sapiente itaque, eos molestiae inventore ipsum provident
+	consequuntur sint error? Consectetur veniam ducimus porro odio obcaecati?</p>
+            </article>
+        </section>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+	
+<script>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
