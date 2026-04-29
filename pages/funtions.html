@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones</title>
+    <script>
+        function mayor_edad(edad){
+            let mayor = false;
+            if(edad >=18)
+               mayor = true
+            else
+               mayor = false;
+            return mayor;
+        }
+
+        function hello(name){
+            alert("Hello, welcome to my webpage " + name)
+        }
+
+
+        //Ejeplo con valor 15
+        console.log(mayor_edad(15));
+        //Ejemplo con valor 18
+        console.log(mayor_edad(18));
+        
+
+        let name = prompt("dame tu nombre");
+        hello(name);
+
+        let age = prompt("dame tu edad");
+        if (mayor_edad(age)){
+            //mayor edad permite el ingreso
+            alert("bienvenido")
+        }else
+        {
+            //menor edad restringido
+            alert("no puedes ingresar a la web");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
